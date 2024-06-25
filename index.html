@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Boujour! I am Ka Lok Cheung. I also go by the name "Karlo". <br/>I am a software developer with experience in various programming languages and frameworks. I love to build applications that solve real-world problems.</p>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Clicking on the boxes will redirect you to the respective Github repo</p>
+        <a class="project-link" href="https://github.com/kalokcheung14/wordle-assist-android" target="_blank">
+            <div class="project">
+               <h3>Wordle Assist (Android)</h3>
+               <p>This app can help you solve Wordle the game: https://www.nytimes.com/games/wordle/index.html. I architected the app using MVVM structure. The UI is built using Jetpack Compose.</p>
+            </div>
+        </a>
+        <a class="project-link" href="https://github.com/kalokcheung14/SimpliTaxJs" target="_blank">
+            <div class="project">
+                <h3>SimpliTaxJS</h3>
+                <p>This simple web app helps you calcuate the price of a product/service after applying GST/HST in Ontario. It is built using pure JavaScript.</p>
+            </div>
+        </a>
+        <a class="project-link" href="https://github.com/kalokcheung14/hong_kong_phantom_buses" target="_blank">
+            <div class="project">
+                <h3>Hong Kong Phantom Buses</h3>
+                <p>This is a proof of concept on consuming and restructuring the bus ETA data provided by Hong Kong Governement's Open Data API. I used SpringBoot to develop a backend service that request and consume real time data from the API. Then, I created a frontend to further consume the processed information using React, Redux and React Hook.</p>
+            </div>
+        </a>
+        <!-- Add more projects as needed -->
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a class="link" href="mailto:karlocheungca@gmail.com">karlocheungca@gmail.com</a></p>
+        <p><a class="link" href="https://github.com/kalokcheung14" target="_blank">Github</a> | <a class="link" href="https://www.linkedin.com/in/ka-lok-cheung-3370a7146/" target="_blank">LinkedIn</a></p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Karlo Cheung</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
