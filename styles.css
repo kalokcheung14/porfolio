@@ -54,7 +54,8 @@ section p, .project {
     padding: 1rem;
     border: 1px solid #ddd;
     margin: 1rem auto;
-    max-width: 600px;
+    max-width: 530px;
+    height: 90%;
     animation: fadeIn 2s ease-in-out;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -232,4 +233,18 @@ img {
     padding-left: 5%;
     padding-right: 5%;
     text-align: justify;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 5px;
+}
+
+@media (max-width: 1200px) {
+    .content-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
