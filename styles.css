@@ -192,3 +192,35 @@ img {
 .project-desc { grid-area: project-desc;}
 .project-img { grid-area: project-img;}
 
+.card {
+    background-color: #333; /* Light grey background */
+    border-radius: 12px; /* Rounded corners */
+    padding: 10px 15px; /* Padding inside the card */
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(72, 112, 115, 0.1); /* Subtle shadow for a 3D effect */
+    margin: 10px 10px; /* Margin to separate cards */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Optional hover effect */
+.card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+#tech-stack {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+@media (max-width: 700px) {
+    #tech-stack {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
