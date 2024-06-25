@@ -60,7 +60,18 @@ section p, .project {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background: #fff;
     transition: transform 0.3s, box-shadow 0.3s;
+    display: grid;
+    grid-template-areas:
+        'project-title project-title'
+        'project-img project-desc';
 }
+
+@media (max-width: 700px) {
+    .project {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 
 .project:hover {
     transform: translateY(-10px);
@@ -153,4 +164,31 @@ footer {
     max-width: 600px;
     display: inline-block;
 }
+
+img {
+    width: 200px;
+}
+
+@media (max-width: 700px) {
+    img {
+        align-self: center;
+        width: 250px;
+    }
+}
+
+.project-desc {
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.project-img {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.project-title { grid-area: project-title;}
+.project-desc { grid-area: project-desc;}
+.project-img { grid-area: project-img;}
 
